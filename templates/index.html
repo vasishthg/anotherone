@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Dixit</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='dark.css')}}">
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-left">
+            <h1 id="menu-header">ENJOYING THE <br>JOURNEY<span style="font-family: 'Satoshi-Black';">?</span></h1>
+            <div class="menu-form">
+                <form action="" class="review-form" method="post">
+                    <textarea name="review-form" id="" style="resize: none;" class="review-form-review" placeholder="Write a review..."></textarea>
+                    <input type="submit" class="review-form-submit hoverable">
+                </form>
+            </div>
+            <div class="menu-socials">
+                <p id="menu-socials-header">Find me here</p>
+                <div class="menu-socials-icons">
+                    <img src="{{url_for('static', filename='spotify.svg')}}" class="menu-socials-icon hoverable" alt="">
+                    <img src="{{url_for('static', filename='youtube.svg')}}" class="menu-socials-icon hoverable" alt="">
+                    <img src="{{url_for('static', filename='linkedin.svg')}}" class="menu-socials-icon hoverable" alt="">
+                    <img src="{{url_for('static', filename='insta.svg')}}" class="menu-socials-icon hoverable" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="menu-right">
+            <div id="menulink-sorter">
+                <div class="menu-links">
+                    <a href="/">
+                    <div class="menu-link hoverable" id="menulink-home">
+                            <p class="menu-linktxt">HOME</p>
+                            <hr class="menuhr"><br><br>
+                        </div>
+                    </a>
+                    <a href="/work">
+                        <div class="menu-link hoverable" id="menulink-work">
+                            <p class="menu-linktxt">WORK</p>
+                            <hr class="menuhr"><br><br>
+                        </div>
+                    </a>
+                    <a href="/about">
+                    <div class="menu-link hoverable" id="menulink-about">
+                            <p class="menu-linktxt">ABOUT</p>
+                            <hr class="menuhr"><br><br>
+                        </div>
+                    </a>
+                    <a href="/pricing">
+                        <div class="menu-link hoverable" id="menulink-pricing">
+                            <p class="menu-linktxt">PRICING</p>
+                            <hr class="menuhr"><br><br>
+                        </div>
+                    </a>
+                    <a href="/contact">
+                        <div class="menu-link hoverable" id="menulink-contact">
+                            <p class="menu-linktxt">CONTACT</p>
+                            <hr class="menuhr"><br><br>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <br>
+        <div class="theme-switcher sidebar-center">
+            <img src="{{url_for('static', filename='themeswitcher.svg')}}" class="menu-icons">
+        </div>
+        <div class="sidebar-menubtn sidebar-center hoverable">
+            <img src="{{url_for('static', filename='menubtn.svg')}}" id="menu-icon" class="menu-icons">
+        </div>
+        <div class="sidebar-socials sidebar-center">
+            <a href="">
+                <img src="{{url_for('static', filename='spotify.svg')}}" id="sidebaricon-spotify" class="menu-icons" alt="">
+            </a>
+            <br>
+            <a href="">
+                <img src="{{url_for('static', filename='youtube.svg')}}" id="sidebaricon-yt" class="menu-icons" alt="">
+            </a>
+            <br>
+            <a href="">
+                <img src="{{url_for('static', filename='linkedin.svg')}}" id="sidebaricon-linkedin" class="menu-icons" alt="">
+            </a>
+            <br>
+            <a href="">
+                <img src="{{url_for('static', filename='insta.svg')}}" id="sidebaricon-insta" class="menu-icons" alt="">
+            </a>
+            <br>
+        </div>
+    </div>
+    <div class="main">
+        <div class="home-desc">
+            <p id="home-desc-txt">Home</p>
+            <p id="home-desc-page">01</p>
+        </div>
+        <div class="home-dimension">
+            <img src="{{url_for('static', filename='homevector.svg')}}" id="homevector" alt="">
+            <p id="home-dimension-txt">You're entering a new dimension</p>
+        </div>
+        <button class="btn-linestroke hvr-sweep-to-right hoverable" onclick="window.location.href ='/work'" id="home-start-btn"><div id="start-btndiv"><span id="start-txt">START</span> <span><img src="{{url_for('static', filename='start.svg')}}" id="start-vector"></span></div></button>
+        <div class="home-goofybtn hoverable"  onclick="window.location.href ='/work'">
+            <div class="home-goofybtn-border" id="goofybtn-border1">
+                <img src="{{url_for('static', filename='goofybtnvector.svg')}}" id="goofybtn-vector" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cursor">
+        
+        <div class="cursor__ball cursor__ball--big ">
+            <svg height="30" width="30">
+              <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+          </div>
+        <div class="cursor__ball cursor__ball--small">
+          <svg height="10" width="10">
+            <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+          </svg>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="{{url_for('static', filename='main.js')}}"></script>
+</html>
